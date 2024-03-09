@@ -7,7 +7,7 @@ export const createLinearComment = async (
 		linearIssueBody: string;
 	},
 ) => {
-	await linear.commentCreate({
+	await linear.createComment({
 		issueId: linearIssueId,
 		body: linearIssueBody,
 	});

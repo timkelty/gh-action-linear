@@ -16,7 +16,7 @@ export const createLinearIssue = async (
 		linearIssueLabel: string | null;
 	},
 ) => {
-	const response = await linear.issueCreate({
+	const response = await linear.createIssue({
 		description: linearIssueDescription,
 		stateId: linearIssueStatus,
 		teamId: linearTeamId,

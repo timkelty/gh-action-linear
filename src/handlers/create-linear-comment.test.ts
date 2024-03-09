@@ -14,7 +14,7 @@ test("Calls Linear commentCreate with formatted body", async () => {
 		linearIssueBody: "test-linear-issue-comment",
 	});
 
-	expect(linear.commentCreate).toHaveBeenCalledWith({
+	expect(linear.createComment).toHaveBeenCalledWith({
 		issueId: "test-linear-issue-id",
 		body: "test-linear-issue-comment",
 	});

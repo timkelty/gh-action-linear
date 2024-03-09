@@ -12,7 +12,7 @@ test("Calls linear issueUpdate with passed status", async () => {
 		linearIssueStatus: "test-linear-issue-status",
 	});
 
-	expect(linear.issueUpdate).toHaveBeenCalledWith("test-linear-issue-id", {
+	expect(linear.updateIssue).toHaveBeenCalledWith("test-linear-issue-id", {
 		stateId: "test-linear-issue-status",
 	});
 });

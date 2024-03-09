@@ -7,5 +7,5 @@ export const setLinearStatus = async (
 		linearIssueStatus: string;
 	},
 ) => {
-	await linear.issueUpdate(linearIssueId, { stateId: linearIssueStatus });
+	await linear.updateIssue(linearIssueId, { stateId: linearIssueStatus });
 };
