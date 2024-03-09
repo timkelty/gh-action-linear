@@ -28,7 +28,7 @@ test("Calls issue create with passed params", async () => {
 		linearIssueCreateAsUser: "test-linear-issue-create-as-user",
 	});
 
-	expect(linear.issueCreate).toHaveBeenCalledWith({
+	expect(linear.createIssue).toHaveBeenCalledWith({
 		description: "test-linear-issue-description",
 		stateId: "test-linear-issue-status",
 		teamId: "test-linear-team-id",

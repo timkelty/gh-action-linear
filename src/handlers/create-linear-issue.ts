@@ -24,7 +24,7 @@ export const createLinearIssue = async (
 		linearAttachmentSubtitle: string;
 	}
 ) => {
-	const response = await linear.issueCreate({
+	const response = await linear.createIssue({
 		description: linearIssueDescription,
 		stateId: linearIssueStatus,
 		teamId: linearTeamId,
@@ -41,7 +41,7 @@ export const createLinearIssue = async (
 
 	const { id, identifier, url } = issue;
 
-	await linear.attachmentCreate({
+	await linear.createAttachment({
 		issueId: id,
 		title: linearAttachmentTitle,
 		url: linearAttachmentUrl,
