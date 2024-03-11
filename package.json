@@ -19,8 +19,8 @@
     "vitest": "0.25.3"
   },
   "dependencies": {
-    "@actions/core": "1.10.0",
-    "@actions/github": "5.1.1",
-    "@linear/sdk": "^17.0.1"
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "@linear/sdk": "^18.0.0"
   }
 }
